@@ -504,12 +504,13 @@ button {
     background-color: #31D0AA;
 }
 
-.footer_form-label {
+.footer_form-title {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .footer_form {
@@ -525,7 +526,6 @@ button {
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 8px 16px;
-    margin-top: 16px;
     outline: transparent;
     color: #FFF;
     font-family: inherit;
@@ -777,7 +777,7 @@ button {
     background-color: transparent;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     fill: transparent;
