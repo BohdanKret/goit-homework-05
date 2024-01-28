@@ -759,10 +759,10 @@ button {
     margin-bottom: 24px;
 }
 
-.checkbox_label {
+/* .checkbox_label {
     display: flex;
     align-items: center;
-}
+} */
 
 .checkbox_label a {
     margin-left: 3.25px;
@@ -772,6 +772,7 @@ button {
 
 .modal_label-span {
     display: inline-flex;
+    /* display: block; */
     width: 16px;
     height: 16px;
     margin-right: 8px;
