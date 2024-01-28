@@ -504,13 +504,12 @@ button {
     background-color: #31D0AA;
 }
 
-.footer_form-title {
+.footer_form-label {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
 }
 
 .footer_form {
@@ -526,6 +525,7 @@ button {
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 8px 16px;
+    margin-top: 16px;
     outline: transparent;
     color: #FFF;
     font-family: inherit;
@@ -557,6 +557,7 @@ button {
 }
 
 .footer_form-btn {
+    min-width: 165px;
     padding: 8px 24px;
     border-radius: 4px;
     background: #4D5AE5;
@@ -568,7 +569,7 @@ button {
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -577,6 +578,10 @@ button {
 .footer_form-btn:focus,
 .footer_form-btn:active {
     background-color: #31D0AA;
+}
+
+.footer_btn-icons {
+    margin-left: 16px;
 }
 
 /* ----------------------------------------------*/
@@ -612,7 +617,7 @@ button {
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-    padding: 24px;
+    padding: 72px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -620,7 +625,10 @@ button {
     width: 24px;
     height: 24px;
     padding: 0;
-    margin-left: auto;
+    /* margin-left: auto; */
+    position: absolute;
+    top: 24px;
+    right: 24px;
     margin-bottom: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.10);
@@ -726,17 +734,24 @@ button {
     outline: transparent;
     resize: none;
     padding: 8px 16px;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    color: rgba(46, 47, 66, 0.4);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_comments::placeholder {
     color: rgba(46, 47, 66, 0.40);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.modal_comments:hover,
+.modal_comments:focus,
+.modal_comments:active {
+    border-color: #4D5AE5;
 }
 
 .checkbox_field {
@@ -755,7 +770,7 @@ button {
 }
 
 .checkbox_label span {
-    display: inline-block;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     margin-right: 8px;
